@@ -1,0 +1,8 @@
+[package]
+name = "uefi-x86_64"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+platform = { git = "https://github.com/theseus-os/platform" }
+theseus = { path = "../../theseus" }

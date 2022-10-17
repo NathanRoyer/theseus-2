@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+
+members = [
+	"theseus",
+	"drivers/*",
+	"bootloaders/*"
+]
+
+[patch.'https://github.com/theseus-os/platform']
+platform = { path = "../platform" }

@@ -1,0 +1,18 @@
+[package]
+name = "theseus"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+platform = { git = "https://github.com/theseus-os/platform" }
+
+# NIC drivers
+e1000 = { path = "../drivers/e1000" }
+mlx5 = { path = "../drivers/mlx5" }
+
+# FS drivers
+fat32 = { path = "../drivers/fat32" }
+ext4 = { path = "../drivers/ext4" }
+
+# Timer drivers
+pmu-x86_64 = { path = "../drivers/pmu-x86_64" }
